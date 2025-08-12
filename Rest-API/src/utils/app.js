@@ -1,0 +1,38 @@
+const express = require('express')
+const router = express.Router()
+
+// import each resource route
+const usersRoute = require('../routes/users.route')
+const tutorRoute = require('../routes/tutor.route')
+const kategoriRoute = require('../routes/kategori.route')
+const produkRoute = require('../routes/produk.route')
+const modulRoute = require('../routes/modul.route')
+const bahasaPengantarRoute = require('../routes/bahasa_pengantar.route')
+const produkModulRoute = require('../routes/produk_modul.route')
+const materialRoute = require('../routes/material.route')
+const pertanyaanRoute = require('../routes/pertanyaan.route')
+const kelasSayaRoute = require('../routes/kelas_saya.route')
+const kelasSayaProdukRoute = require('../routes/kelas_saya_produk.route')
+const orderProdukRoute = require('../routes/order_produk.route')
+const pembayaranRoute = require('../routes/pembayaran.route')
+const ratingTutorRoute = require('../routes/rating_tutor.route')
+const reviewProdukRoute = require('../routes/review_produk.route')
+
+// mount base paths
+router.use('/users', usersRoute)
+router.use('/tutor', tutorRoute)
+router.use('/kategori', kategoriRoute)
+router.use('/produk', produkRoute)
+router.use('/modul', modulRoute)
+router.use('/bahasa_pengantar', bahasaPengantarRoute)
+router.use('/produk_modul', produkModulRoute)
+router.use('/material', materialRoute)
+router.use('/pertanyaan', pertanyaanRoute)
+router.use('/kelas_saya', kelasSayaRoute)
+router.use('/kelas_saya_produk', kelasSayaProdukRoute)
+router.use('/order_produk', orderProdukRoute)
+router.use('/pembayaran', pembayaranRoute)
+router.use('/rating_tutor', ratingTutorRoute)
+router.use('/review_produk', reviewProdukRoute)
+
+module.exports = router
