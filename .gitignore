@@ -1,2 +1,3 @@
-Rest-API/node_modules
-Rest-API/.env
+node_modules/
+.env
+Rest-API-Advance/Documentations
